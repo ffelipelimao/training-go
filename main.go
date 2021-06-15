@@ -6,7 +6,10 @@ import (
 )
 
 func main() {
-	array := []int{1, 2, 3, 4, 5}
+	array := []int{-4, 3, -9, 0, 4, 1}
 	resultado := app.Calculate(array)
-	fmt.Println(resultado)
+	for i := 0; i < len(resultado); i++ {
+		fmt.Printf("%.6f \n", resultado[i])
+	}
+
 }
